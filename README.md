@@ -8,6 +8,32 @@ This repository provides step-by-step instructions for setting up Hadoop, Apache
 2. Download Hadoop version 3.2.4 (binary) using the following command:
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz
 
+# Data Collection
+
+In this section, we'll walk you through the process of collecting data from the Mastodon API and saving it directly to HDFS. We'll be using a Python script for this purpose.
+
+## Prerequisites
+
+Before you begin, make sure you have the following prerequisites in place:
+
+- Python installed on your system.
+- Access tokens for the Mastodon API.
+- HDFS set up and running.
+
+## Data Collection Script
+
+We've provided a Python script in this repository that collects data from the Mastodon API and stores it in HDFS. You can find the script in the `data_collection` folder.
+
+### Running the Script
+
+Follow these steps to run the data collection script:
+
+1. Open a terminal and navigate to the `/usr/data/` folder (in my case).
+2. Execute the script with the following command:
+    ````
+    python3 get_data.py
+
+
 
 ## Airflow Installation
 
