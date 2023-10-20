@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import sys
+
+current_url = None
+url_count = 0
+
+for line in sys.stdin:
+    try:
+        url, count = line.strip().split('\t')
+
+        if current_url == url:
+            url_count += int(count)
+        else:
+            if current_url:
+                # Output the URL and its count
+                print(f"{current_url}\t{url_count}")
+            current_url = url
+            url_count = int(count)
+
+    except ValueError:
+        # Ignore lines that don't have the expected format
+        continue
+
+# Output the most shared external URL and its count
+if current_url:
+    print(f"{current_url}\t{url_count}")
