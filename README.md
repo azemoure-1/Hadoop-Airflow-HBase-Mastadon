@@ -110,25 +110,25 @@ Before running this script, make sure you have the following prerequisites in pl
 
     ```bash
 ## Download HBase
-## Replace 'X.X.X' with the desired HBase version.
+### Replace 'X.X.X' with the desired HBase version.
     wget https://archive.apache.org/dist/hbase/X.X.X/hbase-X.X.X-bin.tar.gz
 
-## Extract HBase Archive
+### Extract HBase Archive
     tar -xvf hbase-X.X.X-bin.tar.gz
 
-## Set HBase Configuration
+### Set HBase Configuration
 Edit the HBase configuration file 'hbase-site.xml' in the 'conf' directory with your desired settings.
 
-## Start HBase
+### Start HBase
     /path/to/hbase-X.X.X/bin/start-hbase.sh
 
-## Access HBase Shell
+### Access HBase Shell
     /path/to/hbase-X.X.X/bin/hbase shell
 
-## HBase Web UI
+### HBase Web UI
  Open a web browser and go to http://localhost:16010 to access the HBase Web UI.
 
-## Table Creation
+### Table Creation
  Use the HBase shell or a preferred client to create tables and define schemas for your data storage.
 
 
