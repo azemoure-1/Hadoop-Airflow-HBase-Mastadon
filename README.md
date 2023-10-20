@@ -60,9 +60,43 @@ To perform user analysis, follow these steps:
    hadoop jar /path/to/hadoop-streaming-2.7.3.jar -input /input/data.json -output /output/user_analysis -mapper /path/to/user_following_mapper.py -reducer /path/to/user_following_reducer.py
 
 
-## Airflow Installation
+# Apache Airflow Installation
 
-Instructions for installing Apache Airflow.
+In this section, you'll find a script that consolidates the steps for installing Apache Airflow. This script will create a virtual environment, install Apache Airflow, initialize the database, start the Airflow web server and scheduler, and provide access to the web interface.
+
+## Prerequisites
+
+Before running this script, make sure you have the following prerequisites in place:
+
+- Python installed on your system (recommended version).
+- Python package manager (pip) installed.
+
+```bash
+# Create a Virtual Environment
+python -m venv airflow-env
+
+# Activate the Virtual Environment
+# On Linux or macOS:
+source airflow-env/bin/activate
+
+# On Windows:
+airflow-env\Scripts\activate
+
+# Install Apache Airflow
+pip install apache-airflow
+
+# Initialize the Airflow Database
+airflow initdb
+
+# Start the Airflow Web Server and Scheduler
+airflow webserver -p 8080
+
+# In a separate terminal:
+airflow scheduler
+
+# Access the Airflow Web Interface
+# Open a web browser and go to http://localhost:8080
+
 
 ## HBase Installation and Configuration
 
