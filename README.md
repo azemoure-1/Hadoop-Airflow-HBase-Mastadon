@@ -44,6 +44,12 @@ In this section, we'll discuss the MapReduce processing for different axes of an
 
 **Reducer:** `user_following_reducer.py`
 
+## Content Analysis
+
+**Mapper:** `user_content_mapper.py`
+
+**Reducer:** `user_content_reducer.py`
+
 ### Running User Analysis
 
 To perform user analysis, follow these steps:
