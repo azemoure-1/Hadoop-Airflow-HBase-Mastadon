@@ -1,4 +1,4 @@
-## ***Hadoop*** *Installation & Configuration on WSL2 (ubuntu)*
+# Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
 > To install Hadoop, follow the [link](https://hadoop.apache.org/releases.html). In my case, I'm using Hadoop version 3.2.4 (binary).
 [Download Hadoop 3.2.4](https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz)
 
@@ -6,9 +6,6 @@ To download Hadoop 3.2.4, click the link above or use the following command:
 
     ```bash
     wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz
-    ```
-
-    ```bash
     sudo apt update 
     sudo apt upgrade
     sudo vim
@@ -22,8 +19,6 @@ After you've set up the WSL environment, make sure to install the dependencies :
 Open .bashrc file
     ```bash
     sudo vim ~/.bashrc
-    ```
-    ```bash
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
     export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
     ```
