@@ -1,4 +1,4 @@
-![5](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/d0eb99aa-0e97-4fff-bcec-76671dfad9da)# Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
+# Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
 
 This repository provides step-by-step instructions for setting up Hadoop, Apache Airflow, Mapper, Reducer, and HBase on WSL2 (Ubuntu). 
 
@@ -65,7 +65,6 @@ In this section, we'll discuss the MapReduce processing for different axes of an
 
 **Reducer:** `user_content_reducer.py`
 
-![1](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/558fc8d1-a9bc-46a1-9579-d0c4e132b4ec)
 
 
 ### Running User Analysis
