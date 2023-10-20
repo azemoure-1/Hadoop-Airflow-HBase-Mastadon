@@ -1,4 +1,4 @@
-# Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
+![5](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/d0eb99aa-0e97-4fff-bcec-76671dfad9da)# Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
 
 This repository provides step-by-step instructions for setting up Hadoop, Apache Airflow, Mapper, Reducer, and HBase on WSL2 (Ubuntu). 
 
@@ -6,7 +6,14 @@ This repository provides step-by-step instructions for setting up Hadoop, Apache
 
 1. To install Hadoop, visit the [Hadoop releases page](https://hadoop.apache.org/releases.html).
 2. Download Hadoop version 3.2.4 (binary) using the following command:
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz
+wget https![3](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/a1aabaff-1a4d-4521-b300-1971abb618ac)
+://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz
+
+![Uploading 3.png…]()
+
+
+![4](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/b22eecec-5eb4-4593-bd9a-fae4c1e3a185)
+
 
 # Data Collection
 
@@ -24,8 +31,6 @@ Before you begin, make sure you have the following prerequisites in place:
 
 We've provided a Python script in this repository that collects data from the Mastodon API and stores it in HDFS. You can find the script in the `get_data.py` folder.
 
-![2](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/20eae776-2d37-4df8-bb3a-26b829436dcd)
-
 
 ### Running the Script
 
@@ -37,6 +42,9 @@ Follow these steps to run the data collection script:
     python3 get_data.py
     ````
 
+   ![2](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/a68e5b53-8b0f-4df5-af47-f7ec1362c1cd)
+
+
 # MapReduce Processing
 
 In this section, we'll discuss the MapReduce processing for different axes of analysis. For each analysis, we've created separate Mapper and Reducer Python scripts. Here are the scripts and instructions on how to run them using Hadoop streaming.
@@ -47,11 +55,18 @@ In this section, we'll discuss the MapReduce processing for different axes of an
 
 **Reducer:** `user_following_reducer.py`
 
+
+![5](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/242cb621-bc43-4132-b568-8abf91e964c1)
+
+
 ## Content Analysis
 
 **Mapper:** `user_content_mapper.py`
 
 **Reducer:** `user_content_reducer.py`
+
+![1](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/558fc8d1-a9bc-46a1-9579-d0c4e132b4ec)
+
 
 ### Running User Analysis
 
