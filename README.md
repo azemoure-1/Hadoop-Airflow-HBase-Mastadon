@@ -117,7 +117,7 @@ Before running this script, make sure you have the following prerequisites in pl
     tar -xvf hbase-X.X.X-bin.tar.gz
 
 ## Set HBase Configuration
-## Edit the HBase configuration file 'hbase-site.xml' in the 'conf' directory with your desired settings.
+Edit the HBase configuration file 'hbase-site.xml' in the 'conf' directory with your desired settings.
 
 ## Start HBase
     /path/to/hbase-X.X.X/bin/start-hbase.sh
@@ -126,10 +126,10 @@ Before running this script, make sure you have the following prerequisites in pl
     /path/to/hbase-X.X.X/bin/hbase shell
 
 ## HBase Web UI
-# Open a web browser and go to http://localhost:16010 to access the HBase Web UI.
+ Open a web browser and go to http://localhost:16010 to access the HBase Web UI.
 
 ## Table Creation
-# Use the HBase shell or a preferred client to create tables and define schemas for your data storage.
+ Use the HBase shell or a preferred client to create tables and define schemas for your data storage.
 
 
 **Note:** Each section in this guide will have its own detailed instructions and configuration steps. Please navigate to the respective folders/files for more information on setting up these components.
