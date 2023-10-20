@@ -22,7 +22,10 @@ Before you begin, make sure you have the following prerequisites in place:
 
 ## Data Collection Script
 
-We've provided a Python script in this repository that collects data from the Mastodon API and stores it in HDFS. You can find the script in the `data_collection` folder.
+We've provided a Python script in this repository that collects data from the Mastodon API and stores it in HDFS. You can find the script in the `get_data.py` folder.
+
+![2](https://github.com/azemoure-1/Hadoop-Airflow-HBase-Mastadon/assets/113553607/20eae776-2d37-4df8-bb3a-26b829436dcd)
+
 
 ### Running the Script
 
