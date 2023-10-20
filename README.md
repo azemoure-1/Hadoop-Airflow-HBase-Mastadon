@@ -71,36 +71,66 @@ Before running this script, make sure you have the following prerequisites in pl
 - Python installed on your system (recommended version).
 - Python package manager (pip) installed.
 
-```bash
-# Create a Virtual Environment
-python -m venv airflow-env
+    ```bash
+    # Create a Virtual Environment
+    python -m venv airflow-env
 
-# Activate the Virtual Environment
-# On Linux or macOS:
+## Activate the Virtual Environment
 source airflow-env/bin/activate
 
-# On Windows:
-airflow-env\Scripts\activate
+## On Windows:
+    airflow-env\Scripts\activate
 
-# Install Apache Airflow
-pip install apache-airflow
+## Install Apache Airflow
+    pip install apache-airflow
 
-# Initialize the Airflow Database
-airflow initdb
+## Initialize the Airflow Database
+    airflow initdb
 
-# Start the Airflow Web Server and Scheduler
-airflow webserver -p 8080
+## Start the Airflow Web Server and Scheduler
+    airflow webserver -p 8080
 
-# In a separate terminal:
-airflow scheduler
+## In a separate terminal:
+    airflow scheduler
 
-# Access the Airflow Web Interface
-# Open a web browser and go to http://localhost:8080
+## Access the Airflow Web Interface
+## Open a web browser and go to http://localhost:8080
 
 
-## HBase Installation and Configuration
+# HBase Installation and Configuration
 
-Instructions for installing and configuring HBase for data storage.
+In this section, you'll find a script that consolidates the steps for installing and configuring HBase, a critical component for data storage in your pipeline.
+
+## Prerequisites
+
+Before running this script, make sure you have the following prerequisites in place:
+
+- Java Development Kit (JDK) installed (recommended version).
+- Hadoop set up and running, as HBase relies on Hadoop's HDFS for storage.
+
+    ```bash
+## Download HBase
+## Replace 'X.X.X' with the desired HBase version.
+    wget https://archive.apache.org/dist/hbase/X.X.X/hbase-X.X.X-bin.tar.gz
+
+## Extract HBase Archive
+    tar -xvf hbase-X.X.X-bin.tar.gz
+
+## Set HBase Configuration
+## Edit the HBase configuration file 'hbase-site.xml' in the 'conf' directory with your desired settings.
+
+## Start HBase
+    /path/to/hbase-X.X.X/bin/start-hbase.sh
+
+## Access HBase Shell
+    /path/to/hbase-X.X.X/bin/hbase shell
+
+## HBase Web UI
+## Open a web browser and go to http://localhost:16010 to access the HBase Web UI.
+
+## Table Creation
+## Use the HBase shell or a preferred client to create tables and define schemas for your data storage.
+
 
 **Note:** Each section in this guide will have its own detailed instructions and configuration steps. Please navigate to the respective folders/files for more information on setting up these components.
 
