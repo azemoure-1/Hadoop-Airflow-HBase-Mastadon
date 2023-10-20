@@ -32,8 +32,7 @@ Follow these steps to run the data collection script:
 2. Execute the script with the following command:
     ````
     python3 get_data.py
-
-
+    ````
 
 ## Airflow Installation
 
