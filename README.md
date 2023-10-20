@@ -34,13 +34,29 @@ Follow these steps to run the data collection script:
     python3 get_data.py
     ````
 
+# MapReduce Processing
+
+In this section, we'll discuss the MapReduce processing for different axes of analysis. For each analysis, we've created separate Mapper and Reducer Python scripts. Here are the scripts and instructions on how to run them using Hadoop streaming.
+
+## User Analysis
+
+**Mapper:** `user_following_mapper.py`
+
+**Reducer:** `user_following_reducer.py`
+
+### Running User Analysis
+
+To perform user analysis, follow these steps:
+
+1. Execute the following Hadoop streaming command, replacing the paths with your actual file paths and script locations:
+
+   ```bash
+   hadoop jar /path/to/hadoop-streaming-2.7.3.jar -input /input/data.json -output /output/user_analysis -mapper /path/to/user_following_mapper.py -reducer /path/to/user_following_reducer.py
+
+
 ## Airflow Installation
 
 Instructions for installing Apache Airflow.
-
-## Mapper and Reducer
-
-This section provides details on setting up the Mapper and Reducer components for your data processing pipeline.
 
 ## HBase Installation and Configuration
 
