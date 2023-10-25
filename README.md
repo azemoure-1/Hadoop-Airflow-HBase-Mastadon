@@ -1,6 +1,6 @@
 # Hadoop, Airflow, Mapper, Reducer, and HBase Setup Guide
 
-This repository provides step-by-step instructions for setting up Hadoop, Apache Airflow, Mapper, Reducer, and HBase on WSL2 (Ubuntu). 
+This repository provides step-by-step instructions for setting up Hadoop, Apache Airflow, Mapper, Reducer, and HBase on Ubuntu. 
 
 # RGPD :
 Garantir le respect du règlement général sur la protection des données (RGPD) est primordial lors du traitement des données personnelles au sein du pipeline de données Mastodon. Ce document décrit les principales étapes prises pour adhérer à la réglementation GDPR, démontrant notre engagement à protéger les données personnelles et à respecter le droit à la vie privée des individus.
