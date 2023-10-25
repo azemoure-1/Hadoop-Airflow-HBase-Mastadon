@@ -109,20 +109,6 @@ def save_to_json_hdfs(data, hdfs_url, hdfs_filename):
     except Exception as e:
         print(f"Error saving data to HDFS: {str(e)}")
 
-# Example usage:
-if __name__ == "__main__":
-    URL = 'https://mastodon.social/api/v1/timelines/public'
-    params = {
-        'limit': 40,
-    }
-    limit = 200  # Set the limit to the desired number of toots
-
-    hdfs_url = 'http://localhost:9870'
-    hdfs_filename = 'mastodon_data'
-
-    client_id = "your_client_id"
-    client_secret = "your_client_secret"
-    access_token = "your_access_token"
 
     # Create a Mastodon instance
     mastodon = Mastodon(
