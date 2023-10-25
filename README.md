@@ -2,6 +2,50 @@
 
 This repository provides step-by-step instructions for setting up Hadoop, Apache Airflow, Mapper, Reducer, and HBase on WSL2 (Ubuntu). 
 
+# RVBD :
+Garantir le respect du règlement général sur la protection des données (RGPD) est primordial lors du traitement des données personnelles au sein du pipeline de données Mastodon. Ce document décrit les principales étapes prises pour adhérer à la réglementation GDPR, démontrant notre engagement à protéger les données personnelles et à respecter le droit à la vie privée des individus.
+Étapes clés pour la conformité au RGPD
+Anonymisation des données :
+
+Les informations personnelles jouent un rôle essentiel dans la conformité au RGPD. Afin de répondre aux exigences du RGPD, toutes les données personnelles non pertinentes pour l'analyse sont soit supprimées, soit hachées avant traitement. Cette procédure garantit que les informations personnelles sensibles restent protégées tout au long du pipeline de données.
+
+### Minimisation des données :
+
+Seules les données nécessaires à l'analyse sont conservées, tandis que toute information superflue ou non pertinente est supprimée afin de minimiser l'exposition des données et d'atténuer les risques potentiels pour la vie privée.
+
+### Mesures de sécurité:
+
+Notre pipeline de données utilise des mesures de sécurité robustes pour protéger les données. Les systèmes de stockage HDFS et HBase sont sécurisés pour empêcher tout accès non autorisé. Des contrôles d'accès, des mécanismes de cryptage et d'authentification sont mis en œuvre pour protéger les données au repos, garantissant ainsi une sécurité complète des données.
+
+### Gestion des lacs de données :
+
+Pour réduire les risques de rétention des données, une politique stricte est en place pour supprimer les données du lac de données une fois qu'elles ont été traitées. Cette pratique aligne la conservation des données strictement sur les finalités du traitement des données telles que spécifiées dans le RGPD.
+
+### Évaluation d’impact sur la protection des données (DPIA) :
+
+Une DPIA est menée pour identifier et atténuer les risques potentiels en matière de confidentialité au sein du pipeline de données. Cette évaluation aide à prendre des décisions éclairées concernant les pratiques et les garanties de traitement des données.
+
+### Gestion du consentement :
+
+Le cas échéant, les activités de traitement des données ne sont menées qu'après avoir obtenu le consentement explicite des personnes concernées, comme l'exige le RGPD. Les enregistrements de consentement sont conservés et gérés avec diligence.
+
+### Droits des personnes concernées :
+
+Des mécanismes sont établis pour respecter les droits des personnes concernées tels que définis par le RGPD. Cela inclut de fournir aux personnes concernées la possibilité d'accéder, de corriger ou de supprimer leurs données personnelles sur demande.
+
+### Documentation et dossiers de conformité :
+
+Une documentation détaillée des activités de traitement des données, des garanties et des mesures de conformité est systématiquement conservée. Cette documentation garantit la transparence et la responsabilité en cas d’enquêtes réglementaires.
+
+### Audits et contrôles de conformité réguliers :
+
+Des audits réguliers sont effectués pour vérifier le respect cohérent des mesures de conformité au RGPD tout au long du pipeline de données. Cela implique de s'assurer que le pipeline est conforme à toute modification ou mise à jour de la réglementation GDPR.
+
+### Réponse aux violations de données :
+
+Un protocole bien défini est établi pour répondre rapidement à toute violation de données conformément aux exigences du RGPD. Les personnes concernées et les autorités de contrôle sont informées si nécessaire.
+
+
 ## Hadoop Installation and Configuration
 
 1. To install Hadoop, visit the [Hadoop releases page](https://hadoop.apache.org/releases.html).
