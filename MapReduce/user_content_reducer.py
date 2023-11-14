@@ -31,7 +31,7 @@ import sys
 
 # Connect to HBase
 connection = happybase.Connection()
-table = connection.table('toots')  # Use the actual table name you've defined in HBase
+table = connection.table('toots')
 
 # Read from standard input and insert into HBase
 for line in sys.stdin:
